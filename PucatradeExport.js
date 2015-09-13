@@ -8,6 +8,6 @@ $('td:contains("Shipped Card")').each(function(i,v) {
 					.replace('");','')
 					.replace(/\\n/g, '\r\n');
 	var card = row.find('td:nth-child(3) a.cl').text();
-	addresses += (number + ',' + card + ',"' + address + '"\r\n');
+	addresses += (number + ',' + card + ',"' + address + '",\r\n');
 });
 console.log(addresses);
